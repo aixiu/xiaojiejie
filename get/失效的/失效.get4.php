@@ -1,7 +1,7 @@
 <?php
 ini_set("error_reporting","E_ALL & ~E_NOTICE");
 $i = mt_rand(10000000000000000, 99999999999999999);
-$url = 'http://wmsp.cc/video.php?_t=0.'.$i;
+$url = 'https://girl.tools/api.php?_t='.$i;
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

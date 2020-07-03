@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<title>JMW-|-小姐姐</title>
+<title>XJJ-123|-小姐姐</title>
 <link rel="stylesheet" type="text/css" href="./css/pc.css">
 <script type="text/javascript">
    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
@@ -17,14 +17,14 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?86194243b3d0dc98474adb8d6755d003";
+  hm.src = "https://hm.baidu.com/hm.js?";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
 <body>
 	<span style="position:absolute;top:15px;left:8vw;color:#fff;font-size:16px;">
-		<strong style="font-size:18px;">JMW-xiaojiejie</strong>   | 看见美好生活
+		<strong style="font-size:18px;">XJJ-123</strong>   | 看见美好生活
 	</span>
 	<div class="app">
 		<div>
@@ -33,7 +33,7 @@ var _hmt = _hmt || [];
 		<div class="box">
 			<div style="padding-top:10px;padding-left:40px;background-color: #0E0F1A;">
 				<img src="./img/logo.png" style="border-radius:20px;width:32px;height:32px;background-color: #fff;">
-			    <span style="color:#fff;padding-left:12px;font-size:16px;background-color: #0E0F1A;" id="userid">@Jmw`Power</span>
+			    <span style="color:#fff;padding-left:12px;font-size:16px;background-color: #0E0F1A;" id="userid">@XJJ-123</span>
 			</div>
 			<div style="padding-top:15px;padding-left:20px;padding-right:20px;background-color: #0E0F1A;">
 			    <span style="color:#fff;color: #999999;background-color: #0E0F1A;">本程序仅作研究学习演示，视频采集自网络;原作者拍摄创作不易，请勿下载传播!</span>
@@ -62,8 +62,9 @@ var _hmt = _hmt || [];
 			</div>
 		    <div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
 		    	<span style="color:#fff;">扫描下方二维码.使用手机播放</span><br>
-				<img src="./img/ewm.png" style="width:88px;height:88px;"><br>
-				<strong style="color:#fff;">http://xjj.jmwpower.top/</strong>
+				<img src="http://ynxiu.cn/qr/?text=http://ynxiu.cn/xjj/" style="width:88px;height:88px;"><br>
+				<!-- <img src="./img/ewm.png" style="width:88px;height:88px;"><br> -->
+				<strong style="color:#fff;">开源来自 http://xjj.jmwpower.top/</strong>
 			</div>
 		</div>
 	</div>
@@ -121,7 +122,19 @@ $(document).ready(function(){
 				}
 			});
 		}
-    });
+	});
+	
+	// $("#userid").on("click", function(){
+	// 	user = $.cookie('user');
+	// 	if (user == null) {
+	// 		$('#dlym').show();
+	// 		$('.login-bg').show();
+	// 	} else {
+	// 		$.removeCookie('user'); //删除cookie
+	// 		$("#userid").html("@XJJ-123");
+	// 		$("#username").val("");
+	// 	}
+	// });
 
     $('.close-login').click(function(){
         $('#dlym').hide();
@@ -129,11 +142,11 @@ $(document).ready(function(){
     });
 
     $("#yuan").on("click", function(){
-    	if (gi < 1) {
+    	if (gi < 7) {
     		gi = gi + 1;
     		this.innerText = "当前数据源【00" + gi + "】";
     		url = "./get/get" + gi + ".php";
-    	} else if (gi = 1) {
+    	} else if (gi = 7) {
 			var user = $.cookie('user');
 			if (user != null) {
 				gi = 0;
@@ -141,7 +154,7 @@ $(document).ready(function(){
 				this.innerText = "当前数据源【收藏】";
 				url = ("./get/get.php?user=" + user);
 			} else {
-				$("#userid").html('@Jmw-Power');
+				$("#userid").html('@XJJ-123');
 				gi = 1;
 	    		this.innerText = "当前数据源【00" + gi + "】";
 	    		url = "./get/get" + gi + ".php";
@@ -221,7 +234,7 @@ $(document).ready(function(){
 	if (user != null) {
 		$("#userid").html('@'+user);
 	} else {
-		$("#userid").html('@Jmw-Power');
+		$("#userid").html('@XJJ-123');
 	}
 });
 
